@@ -7,10 +7,9 @@ tasks:
       pip install -r requirements.txt
       webdrivermanager firefox chrome --linkpath AUTO
 
-image: gitpod/workspace-full-vnc
 ports:
   - port: 6080
-    onOpen: open-preview
+    onOpen: open-browser
     visibility: private
 
 vscode:
