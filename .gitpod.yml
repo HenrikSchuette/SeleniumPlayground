@@ -5,11 +5,13 @@ tasks:
       python -m pip install --upgrade pip
       pip install --upgrade robotframework
       pip install -r requirements.txt
-      webdrivermanager firefox chrome --linkpath AUTO
+      webdrivermanager chrome --linkpath AUTO
+
+image: gitpod/workspace-full-vnc
 
 ports:
   - port: 6080
-    onOpen: open-browser
+    onOpen: open-preview
     visibility: private
 
 vscode:
