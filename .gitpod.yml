@@ -12,6 +12,8 @@ ports:
   - port: 3000
     onOpen: open-preview
 
+image:  kasmweb/firefox
+
 vscode:
   extensions:
     - ms-python.python
